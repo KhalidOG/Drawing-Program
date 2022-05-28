@@ -1,8 +1,4 @@
 //Global Variables
-
-import processing.sound.*;
-SoundFile Music;
-
 Boolean draw=false;
 int reset=1;
 //
@@ -24,8 +20,6 @@ void setup() {
   textSetup();
   //
   newPaper();
-  //
-  Music =new SoundFile(this, "Imbalance Blue slowed+reverb.mp3");
 }//End setup
 //
 void draw() {
@@ -54,8 +48,6 @@ void mousePressed() {
   //
   //New Piece of Paper
   if ( mouseX>=secondTextX && mouseX<=secondTextX+secondTextWidth && mouseY>=secondTextY && mouseY<=secondTextY+secondTextHeight ) paper=true;
-  //
-  Music.loop();
   //
 }//End mousePressed
 //

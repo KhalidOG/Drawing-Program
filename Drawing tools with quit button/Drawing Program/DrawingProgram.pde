@@ -1,8 +1,4 @@
 //Global Variables
-
-import processing.sound.*;
-SoundFile Music;
-
 Boolean draw=false;
 float drawSurfaceX, drawSurfaceY, drawSurfaceWidth, drawSurfaceHeight, diameter;
 int reset=1;
@@ -27,7 +23,6 @@ void setup() {
   //
   rect(drawSurfaceX, drawSurfaceY, drawSurfaceWidth, drawSurfaceHeight);
   //
-Music =new SoundFile(this, "Imbalance Blue slowed+reverb.mp3");
 }//End setup
 //
 void draw() {
@@ -74,7 +69,6 @@ void mousePressed() {
     if ( draw==true ) {
       draw=false;
     } else {
-      Music.loop();
       draw=true;
     }//End draw Boolean
   }//End Paper Button (Draw Surface)
